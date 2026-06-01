@@ -56,10 +56,10 @@ a {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: auto 1fr 1fr; /* column tracks # */
   gap: 30px;
   width: 1200px;
-  margin: 20px auto;
+  margin: 30px auto;
 }
 
 .box {
