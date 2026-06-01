@@ -56,7 +56,9 @@ a {
 
 .container {
   display: grid;
-  grid-template-columns: auto 1fr 1fr; /* column tracks # */
+  /* grid-template-columns: 1fr 1fr; */ /* two column tracks # */
+  /* grid-template-columns: auto 1fr 1fr;  */ /* auto: column's width = content's width */
+  grid-template-columns: repeat(4, 1fr); /* repeat(4, 1fr): 4 columns, each with 1fr width */
   gap: 30px;
   width: 1200px;
   margin: 30px auto;
