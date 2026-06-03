@@ -78,6 +78,10 @@ a {
   background: crimson;
 }
 
+.header {
+  grid-column: span 2; /* span / use / fit / occupy 2 columns */
+}
+
 .blue {
   background: royalblue;
 }
