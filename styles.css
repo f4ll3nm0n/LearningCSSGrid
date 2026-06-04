@@ -56,11 +56,19 @@ a {
 
 .container {
   display: grid;
-  /* grid-template-columns: 1fr 1fr; */ /* two column tracks # */
-  /* grid-template-columns: auto 1fr 1fr;  */ /* auto: column's width = content's width */
-  /* grid-template-columns: repeat(4, 1fr); */ /* repeat(4, 1fr): 4 columns, each with 1fr width */
+
+  /* two column tracks # */
+  /* grid-template-columns: 1fr 1fr; */
+  /* auto: column's width = content's width */
+  /* grid-template-columns: auto 1fr 1fr;  */
+  /* repeat(4, 1fr): 4 columns, each with 1fr width */
+  /* grid-template-columns: repeat(4, 1fr); */
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 120px;
+
+  /* Use this when you want to define exact rows up front. */
+  grid-template-rows: 90px;
+  /* Use this when you do not want to define every row manually. */
+  grid-auto-rows: 140px; 
 
   gap: 30px;
   width: 1200px;
