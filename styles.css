@@ -68,7 +68,7 @@ a {
   /* Use this when you want to define exact rows up front. */
   grid-template-rows: 90px;
   /* Use this when you do not want to define every row manually. */
-  grid-auto-rows: 140px; 
+  grid-auto-rows: 140px;
 
   gap: 30px;
   width: 1200px;
@@ -76,11 +76,18 @@ a {
 }
 
 .header {
-  grid-column: span 3; /* span / use / fit / occupy this # of columns */
+  /* span / use / fit / occupy this # of columns */
+  /* grid-column: span 3; */
+  /* start at column line 1; end at column line 4; */
+  grid-column: 1 / 4;
 }
 
 .sidebar {
-  grid-row: span 2; /* span / use / fit / occupy this # of rows */
+  /* span / use / fit / occupy this # of rows */
+  /* grid-row: span 2; */
+  grid-column: 1 / 2;
+  /* start at row line 2; end at row line 4; */
+  grid-row: 2 / 4;
 }
 
 .box {
@@ -108,4 +115,3 @@ a {
 .yellow {
   background: goldenrod;
 }
-
