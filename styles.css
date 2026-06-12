@@ -57,67 +57,14 @@ a {
   color: inherit;
 }
 
-.container {
+.board {
   display: grid;
-
-  /* two column tracks # */
-  /* grid-template-columns: 1fr 1fr; */
-  /* auto: column's width = content's width */
-  /* grid-template-columns: auto 1fr 1fr;  */
-  /* repeat(4, 1fr): 4 columns, each with 1fr width */
-  /* grid-template-columns: repeat(4, 1fr); */
-  grid-template-columns: repeat(3, 1fr);
-
-  /* Use this when you want to define exact rows up front. */
-  grid-template-rows: 90px;
-  /* Use this when you do not want to define every row manually. */
-  grid-auto-rows: 140px;
-
-  gap: 30px;
-  width: 1200px;
-  margin: 30px auto;
-  /* justify-items: center;
-  align-items: center; */
-  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px 100px;
+  width: 600px;
 }
 
-.header {
-  /* span / use / fit / occupy this # of columns */
-  /* grid-column: span 3; */
-  /* start at column line 1; end at column line 4; */
-  grid-column: 1 / 4;
-}
-
-.sidebar {
-  /* span / use / fit / occupy this # of rows */
-  /* grid-row: span 2; */
-  grid-column: 1 / 2;
-  /* start at row line 2; end at row line 4; */
-  grid-row: 2 / 4;
-}
-
-.box {
-  /* height: 120px; */
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  font-size: 2rem;
-}
-
-.red {
-  background: crimson;
-}
-
-.blue {
-  background: royalblue;
-}
-
-.green {
-  background: seagreen;
-}
-
-.yellow {
-  background: goldenrod;
+.board > * {
+  border: 1px solid orangered;
+  text-align: center;
 }
